@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImdbFilmApp</string>
+
+    <string name="search_movie">Search Movie</string>
+</resources>
