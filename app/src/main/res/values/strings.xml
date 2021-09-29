@@ -2,4 +2,9 @@
     <string name="app_name">ImdbFilmApp</string>
 
     <string name="search_movie">Search Movie</string>
+    <string name="meta_score">MetaScore</string>
+    <string name="imdb_rating">IMDB Rating</string>
+    <string name="imdb_votes">IMDB Votes</string>
+    <string name="country">Country</string>
+    <string name="actors">Cast</string>
 </resources>

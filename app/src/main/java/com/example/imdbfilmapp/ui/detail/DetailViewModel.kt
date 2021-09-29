@@ -2,7 +2,6 @@ package com.example.imdbfilmapp.ui.detail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.imdbfilmapp.features.movies.domain.entities.Movies
 import com.example.imdbfilmapp.features.movies.domain.entities.SelectedMovie
 import com.example.imdbfilmapp.features.movies.domain.usecases.DetailUseCase
 import com.example.imdbfilmapp.util.Resource

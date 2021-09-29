@@ -1,7 +1,5 @@
 package com.example.imdbfilmapp.features.movies.domain.entities
 
-import com.example.imdbfilmapp.features.movies.data.entities.RatingResponse
-
 data class SelectedMovie(
     val actors: String,
     val country: String,
@@ -15,7 +13,6 @@ data class SelectedMovie(
     val released: String,
     val runtime: String,
     val title: String,
-    val year: String,
     val imdbRating: String,
     val imdbVotes: String
 )

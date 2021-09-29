@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(), ToolbarChangesListener {
     lateinit var fragmentsFactory: MovieFragmentFactory
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_ImdbFilmApp)
         super.onCreate(savedInstanceState)
         supportFragmentManager.fragmentFactory = fragmentsFactory
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity(), ToolbarChangesListener {
         val navController = navHostFragment.navController
 
 
+        binding.backButton.setOnClickListener {
+            navController.popBackStack()
+        }
     }
 
     override fun toolbarName(title: String) {

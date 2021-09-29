@@ -40,7 +40,6 @@ fun SelectedMovieResponse.toSelectedMovie() = SelectedMovie(
     this.released,
     this.runtime,
     this.title,
-    this.year,
     this.imdbRating,
     this.imdbVotes
 )

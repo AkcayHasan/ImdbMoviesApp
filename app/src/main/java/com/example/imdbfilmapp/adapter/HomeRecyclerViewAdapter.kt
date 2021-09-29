@@ -14,19 +14,19 @@ import javax.inject.Inject
 class HomeRecyclerViewAdapter @Inject constructor() :
     RecyclerView.Adapter<HomeRecyclerViewAdapter.HomeViewHolder>() {
 
-    private var movieClickListener: ((Movie) -> Unit) ?= null
+    private var movieClickListener: ((Movie) -> Unit)? = null
 
     inner class HomeViewHolder(private val itemBinding: MovieRowBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
 
         fun bind(data: Movie) {
-            itemBinding.ivMovies.downloadImage(data.poster)
+            itemBinding.ivMovies.downloadImage(data.poster, itemBinding.root.context)
             itemBinding.tvMoviesTitle.text = data.title
             itemBinding.tvMoviesYear.text = data.year
         }
     }
 
-    fun setOnMovieClickListener(listener: (Movie) -> Unit){
+    fun setOnMovieClickListener(listener: (Movie) -> Unit) {
         movieClickListener = listener
     }
 
